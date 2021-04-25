@@ -27,5 +27,6 @@ RUN set -ex \
 COPY nginx.conf /etc/nginx/nginx.conf
 COPY index.html /usr/share/nginx/html/index.html
 COPY index.css /usr/share/nginx/html/index.css
+COPY favicon.ico /usr/share/nginx/html/favicon.ico
 
 EXPOSE 1935
