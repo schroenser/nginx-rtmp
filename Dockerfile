@@ -24,7 +24,7 @@ RUN set -ex \
     && apk add --no-cache --allow-untrusted /tmp/packages/nginx-module-rtmp-${NGINX_VERSION}*.apk \
     && rm -rf /tmp/packages
 
-COPY conf/* /etc/nginx
-COPY html/* /usr/share/nginx/html
+COPY conf/ /etc/nginx
+COPY dist/ /usr/share/nginx/html
 
 EXPOSE 1935
