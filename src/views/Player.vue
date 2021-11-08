@@ -4,8 +4,12 @@ import "@silvermine/videojs-airplay/dist/silvermine-videojs-airplay.css";
 import "@silvermine/videojs-chromecast/dist/silvermine-videojs-chromecast.css";
 
 import videojs from "video.js";
-require("@silvermine/videojs-airplay")(videojs);
-require("@silvermine/videojs-chromecast")(videojs);
+
+import videojsAirplay from "@silvermine/videojs-airplay";
+videojsAirplay(videojs);
+
+import videojsChromecast from "@silvermine/videojs-chromecast";
+videojsChromecast(videojs);
 
 export default {
   name: "Player",
